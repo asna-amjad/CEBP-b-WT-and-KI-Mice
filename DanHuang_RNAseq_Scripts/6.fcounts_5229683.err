@@ -1,0 +1,94 @@
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+	  v1.6.3
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 6 BAM files                                      ||
+||                           S 1924_S23_R1_001.fastq.gz.Aligned.sortedByC ... ||
+||                           S 1925_S24_R1_001.fastq.gz.Aligned.sortedByC ... ||
+||                           S 1926_S25_R1_001.fastq.gz.Aligned.sortedByC ... ||
+||                           S 1931_S26_R1_001.fastq.gz.Aligned.sortedByC ... ||
+||                           S 1932_S27_R1_001.fastq.gz.Aligned.sortedByC ... ||
+||                           S 1970_S28_R1_001.fastq.gz.Aligned.sortedByC ... ||
+||                                                                            ||
+||             Output file : counts_Rseq.txt                                  ||
+||                 Summary : counts_Rseq.txt.summary                          ||
+||              Annotation : gencode.vm25.annotation.gtf (GTF)                ||
+||      Dir for temp files : Deseq-outs                                       ||
+||                                                                            ||
+||                 Threads : 16                                               ||
+||                   Level : meta-feature level                               ||
+||              Paired-end : no                                               ||
+||      Multimapping reads : counted (fractional)                             ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\===================== http://subread.sourceforge.net/ ======================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file gencode.vm25.annotation.gtf ...                       ||
+||    Features : 843402                                                       ||
+||    Meta-features : 55401                                                   ||
+||    Chromosomes/contigs : 22                                                ||
+||                                                                            ||
+|| Process BAM file 1924_S23_R1_001.fastq.gz.Aligned.sortedByCoord.out.so ... ||
+||    Single-end reads are included.                                          ||
+||    Strand specific : reversely stranded                                    ||
+||    Assign alignments to features...                                        ||
+||    Total alignments : 39961632                                             ||
+||    Successfully assigned alignments : 37419388 (93.6%)                     ||
+||    Running time : 0.03 minutes                                             ||
+||                                                                            ||
+|| Process BAM file 1925_S24_R1_001.fastq.gz.Aligned.sortedByCoord.out.so ... ||
+||    Single-end reads are included.                                          ||
+||    Strand specific : reversely stranded                                    ||
+||    Assign alignments to features...                                        ||
+||    Total alignments : 38887118                                             ||
+||    Successfully assigned alignments : 36078782 (92.8%)                     ||
+||    Running time : 0.03 minutes                                             ||
+||                                                                            ||
+|| Process BAM file 1926_S25_R1_001.fastq.gz.Aligned.sortedByCoord.out.so ... ||
+||    Single-end reads are included.                                          ||
+||    Strand specific : reversely stranded                                    ||
+||    Assign alignments to features...                                        ||
+||    Total alignments : 43214524                                             ||
+||    Successfully assigned alignments : 40185708 (93.0%)                     ||
+||    Running time : 0.03 minutes                                             ||
+||                                                                            ||
+|| Process BAM file 1931_S26_R1_001.fastq.gz.Aligned.sortedByCoord.out.so ... ||
+||    Single-end reads are included.                                          ||
+||    Strand specific : reversely stranded                                    ||
+||    Assign alignments to features...                                        ||
+||    Total alignments : 41503933                                             ||
+||    Successfully assigned alignments : 37315369 (89.9%)                     ||
+||    Running time : 0.03 minutes                                             ||
+||                                                                            ||
+|| Process BAM file 1932_S27_R1_001.fastq.gz.Aligned.sortedByCoord.out.so ... ||
+||    Single-end reads are included.                                          ||
+||    Strand specific : reversely stranded                                    ||
+||    Assign alignments to features...                                        ||
+||    Total alignments : 40148047                                             ||
+||    Successfully assigned alignments : 35569240 (88.6%)                     ||
+||    Running time : 0.03 minutes                                             ||
+||                                                                            ||
+|| Process BAM file 1970_S28_R1_001.fastq.gz.Aligned.sortedByCoord.out.so ... ||
+||    Single-end reads are included.                                          ||
+||    Strand specific : reversely stranded                                    ||
+||    Assign alignments to features...                                        ||
+||    Total alignments : 35210881                                             ||
+||    Successfully assigned alignments : 32660258 (92.8%)                     ||
+||    Running time : 0.03 minutes                                             ||
+||                                                                            ||
+||                                                                            ||
+|| Summary of counting results can be found in file "Deseq-outs/counts_Rseq.  ||
+|| txt.summary"                                                               ||
+||                                                                            ||
+\\===================== http://subread.sourceforge.net/ ======================//
+
