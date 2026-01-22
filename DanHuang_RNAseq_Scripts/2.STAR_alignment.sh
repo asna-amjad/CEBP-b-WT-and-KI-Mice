@@ -12,7 +12,7 @@
 
 #export PATH=/work/GCRB/s210012/Scripts/RNA_Pipeline/rna-seq-pipeline:$PATH 
 
-cd /project/GCRB/Lee_Lab/shared/Dan/RNAseq_April2025
+cd /project/aamajd/RNAseq_April2025
 
 fastqs='1924_S23_R1_001 1925_S24_R1_001 1926_S25_R1_001 1931_S26_R1_001 1932_S27_R1_001 1970_S28_R1_001'
 
@@ -23,17 +23,7 @@ echo $fastq
 echo ${fastq}.fastq.gz
 pwd
 #For MM10
-./align-star-se.sh -f ${fastq}.fastq.gz -i /project/GCRB/shared/Star_Indexes_2.7.2b/GRCm38_refseq/STAR_Index -a /project/GCRB/shared/Star_Indexes_2.7.2b/GRCm38_refseq/gencode.vM25.annotation.gtf -o /project/GCRB/Lee_Lab/shared/Dan/RNAseq_April2025/Align/
+./align-star-se.sh -f ${fastq}.fastq.gz -i /project/shared/Star_Indexes_2.7.2b/GRCm38_refseq/STAR_Index -a /project/shared/Star_Indexes_2.7.2b/GRCm38_refseq/gencode.vM25.annotation.gtf -o /project/shared/Dan/RNAseq_April2025/Align/
 done
 
 
-
-
-########################################################################
-########################################################################
-#### For MM10
-#-i /project/GCRB/shared/Star_Indexes_2.7.2b/GRCm38_refseq/STAR_Index
-# -a /project/GCRB/shared/Star_Indexes_2.7.2b/GRCm38_refseq/gencode.vM25.annotation.gtf 
-# -o <foldername>
-
-#### For hg38
