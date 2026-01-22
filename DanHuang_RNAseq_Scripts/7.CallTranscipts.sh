@@ -8,7 +8,7 @@
 #SBATCH --mail-user=asna.amjad@utsouthwestern.edu
 #SBATCH --mail-type=ALL
 
-cd /project/GCRB/Lee_Lab/shared/Dan/RNAseq_April2025/Align/align-star-se.sh-1.0.0
+cd /project/aamjad/RNAseq_April2025/Align/align-star-se.sh-1.0.0
 
 ### WT
 ./call-transcripts-cufflinks.sh -f /project/GCRB/Lee_Lab/shared/Dan/RNAseq_April2025/Align/align-star-se.sh-1.0.0/1924_S23_R1_001.fastq.gz.Aligned.sortedByCoord.out.sorted.bam -g /project/apps_database/iGenomes/Mus_musculus/UCSC/mm10/Sequence/Bowtie2Index/genome.fa -a /project/GCRB/shared/Gencode_mouse_VM25/transcriptomeindex/gencode.vm25.annotation.gtf
