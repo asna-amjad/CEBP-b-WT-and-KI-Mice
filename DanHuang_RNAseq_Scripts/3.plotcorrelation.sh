@@ -12,9 +12,9 @@
 
 module load deeptools/3.5.0
 
-cd /project/GCRB/Lee_Lab/shared/Dan/RNAseq_April2025/Align/align-star-se.sh-1.0.0
+cd /project/aamajd/RNAseq_April2025/Align/align-star-se.sh-1.0.0
 mkdir correlations
-#export PATH=/home2/tnandu/rna-seq-pipeline/:$PATH
+#export PATH=/home//rna-seq-pipeline/:$PATH
 function correlations {
 multiBamSummary bins --bamfiles ${File1}.fastq.gz.Aligned.sortedByCoord.out.bam ${File2}.fastq.gz.Aligned.sortedByCoord.out.bam ${File3}.fastq.gz.Aligned.sortedByCoord.out.bam -o correlations/$NAME.npz
 plotCorrelation -in correlations/$NAME.npz --corMethod pearson --skipZeros --plotTitle "Pearson Correlation Scatterplot" --whatToPlot heatmap --plotNumbers -o correlations/$NAME.heatmap.png
