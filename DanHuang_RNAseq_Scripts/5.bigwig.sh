@@ -9,7 +9,7 @@
 #SBATCH --mail-type=END
 #SBATCH --mail-type=FAIL
 
-cd /project/GCRB/Lee_Lab/shared/Dan/RNAseq_April2025/Align/align-star-se.sh-1.0.0/BrowserTracks
+cd /project/aamjad/RNAseq_April2025/Align/align-star-se.sh-1.0.0/BrowserTracks
 
 ##
 #module load R/2.15.3-intel
@@ -17,14 +17,13 @@ cd /project/GCRB/Lee_Lab/shared/Dan/RNAseq_April2025/Align/align-star-se.sh-1.0.
 
 
 # convert wig to bigwig
-#export PATH=/home2/anaga2/anusha_softwares/executables:$PATH
-#export PATH=/home2/tnandu/softwares/executables:$PATH
-export PATH=/project/GCRB/Lee_Lab/shared/Dan/RNAseq_April2025/Align/align-star-se.sh-1.0.0/BrowserTracks:$PATH
+export PATH=/home/softwares/executables:$PATH
+export PATH=/project/aamjad/RNAseq_April2025/Align/align-star-se.sh-1.0.0/BrowserTracks:$PATH
 
-./wigToBigWig WT.sorted_strandSp.Forward.wig /project/GCRB/Lee_Lab/shared/CommonGenomes_Indexes/chromsizes/mm10.chrom.sizes -clip WT_Forward.bw
-./wigToBigWig WT.sorted_strandSp.Reverse.wig /project/GCRB/Lee_Lab/shared/CommonGenomes_Indexes/chromsizes/mm10.chrom.sizes -clip WT_Reverse.bw
+./wigToBigWig WT.sorted_strandSp.Forward.wig /project//shared/CommonGenomes_Indexes/chromsizes/mm10.chrom.sizes -clip WT_Forward.bw
+./wigToBigWig WT.sorted_strandSp.Reverse.wig /project/shared/CommonGenomes_Indexes/chromsizes/mm10.chrom.sizes -clip WT_Reverse.bw
 
-./wigToBigWig KI.sorted_strandSp.Forward.wig /project/GCRB/Lee_Lab/shared/CommonGenomes_Indexes/chromsizes/mm10.chrom.sizes -clip KI_Forward.bw
-./wigToBigWig KI.sorted_strandSp.Reverse.wig /project/GCRB/Lee_Lab/shared/CommonGenomes_Indexes/chromsizes/mm10.chrom.sizes -clip KI_Reverse.bw
+./wigToBigWig KI.sorted_strandSp.Forward.wig /project/shared/CommonGenomes_Indexes/chromsizes/mm10.chrom.sizes -clip KI_Forward.bw
+./wigToBigWig KI.sorted_strandSp.Reverse.wig /project/shared/CommonGenomes_Indexes/chromsizes/mm10.chrom.sizes -clip KI_Reverse.bw
 
 
