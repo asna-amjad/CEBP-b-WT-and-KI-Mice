@@ -11,7 +11,7 @@
 #SBATCH --mail-type=FAIL                                         # send email when job status change (start, end, abortion and etc.)
 
 module load subread/1.6.3
-cd /project/GCRB/Lee_Lab/shared/Dan/RNAseq_April2025/Align/align-star-se.sh-1.0.0
+cd /project/aamjad/RNAseq_April2025/Align/align-star-se.sh-1.0.0
 
 mkdir Deseq-outs
 
