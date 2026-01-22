@@ -9,5 +9,5 @@
 #SBATCH --mail-type=ALL                                   # send email when job status change (start, end, abortion and etc.)
 
 module load fastqc
-cd /project/GCRB/Lee_Lab/shared/Dan/RNAseq_April2025
+cd /project/aamjad/RNAseq_April2025
 fastqc *.fastq.gz
