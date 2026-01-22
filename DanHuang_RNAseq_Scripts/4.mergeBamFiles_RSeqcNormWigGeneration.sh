@@ -13,15 +13,14 @@
 
 
 ##### Remove sequencerID to reduce file size from the bed files
-cd /project/GCRB/Lee_Lab/shared/Dan/RNAseq_April2025/Align/align-star-se.sh-1.0.0
+cd /project/aamjad/RNAseq_April2025/Align/align-star-se.sh-1.0.0
 
 module load python/2.7.x-anaconda
 module load bedtools/2.25.0
 module load samtools/intel/1.3
 module add RSeQC/2.6.4
 
-export PATH=/project/GCRB/Lee_Lab/shared/HyungBum/Seq_Sept_2022_09_23_N2K4_12259_0/Scripts:$PATH
-export PATH=/home2/tnandu/softwares/executables:$PATH
+export PATH=/home/softwares/executables:$PATH
 
 function MakeSignalTracks
 {
